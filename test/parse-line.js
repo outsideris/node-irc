@@ -52,6 +52,16 @@ describe("irc.parseMessage", function() {
             commandType: "normal",
             args: [ "#test", ":^:^:" ]
         },
+        ":변정훈!~martyn@irc.dollyfish.net.nz PRIVMSG #test ::^:^:": {
+            prefix: "변정훈!~martyn@irc.dollyfish.net.nz",
+            nick: "변정훈",
+            user: "~martyn",
+            host: "irc.dollyfish.net.nz",
+            command: "PRIVMSG",
+            rawCommand: "PRIVMSG",
+            commandType: "normal",
+            args: [ "#test", ":^:^:" ]
+        },
         ":some.irc.net 324 webuser #channel +Cnj 5:10": {
             prefix: "some.irc.net",
             server: "some.irc.net",
